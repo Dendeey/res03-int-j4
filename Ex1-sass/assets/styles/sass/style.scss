@@ -1,0 +1,51 @@
+@import "vars";
+
+body{
+    display:grid;
+    grid-template-rows: $grid;
+    background-color: green;
+    height: 100vh;
+    width: 100vw;
+        
+    section:first-of-type{
+        display:grid;
+        grid-template-columns: $grid;
+        border-bottom: $border;
+        width: 100vw;
+                
+        section{
+            border-left: $border;
+            border-right: $border;
+        }
+    }
+    
+    section:nth-of-type(2){
+        border-left: $border;
+        border-bottom: $border;
+        border-right: $border;
+        display:grid;
+        grid-template-columns: $grid;
+        grid-row: 2 / 3;
+        width: 100vw;
+        
+        section{
+            border-left: $border;
+            border-right: $border;
+        }
+    }
+    
+    section:last-of-type{
+        border-left: $border;
+        border-right: $border;
+        display:grid;
+        grid-template-columns: $grid;
+        grid-row: 3 / 4;
+        width: 100vw;
+        
+        section{
+            border-left: $border;
+            border-right: $border;
+        }
+    }
+}
+
