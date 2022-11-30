@@ -7,7 +7,7 @@ body {
 }
 body > section:first-of-type {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   border-bottom: dotted white 1px;
   width: 100vw;
 }
@@ -20,7 +20,7 @@ body > section:nth-of-type(2) {
   border-bottom: dotted white 1px;
   border-right: dotted white 1px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-row: 2/3;
   width: 100vw;
 }

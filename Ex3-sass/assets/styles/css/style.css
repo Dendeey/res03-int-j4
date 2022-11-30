@@ -7,7 +7,7 @@ body {
 }
 body > section:first-of-type {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   border-bottom: dotted white 1px;
   width: 100vw;
 }
@@ -15,18 +15,24 @@ body > section:first-of-type section {
   border-left: dotted white 1px;
   border-right: dotted white 1px;
 }
+body > section:first-of-type section:nth-of-type(2) {
+  background-color: blue;
+}
 body > section:nth-of-type(2) {
   border-left: dotted white 1px;
   border-bottom: dotted white 1px;
   border-right: dotted white 1px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-row: 2/3;
   width: 100vw;
 }
 body > section:nth-of-type(2) section {
   border-left: dotted white 1px;
   border-right: dotted white 1px;
+}
+body > section:nth-of-type(2) section:first-of-type {
+  background-color: red;
 }
 body > section:last-of-type {
   border-left: dotted white 1px;
@@ -39,6 +45,9 @@ body > section:last-of-type {
 body > section:last-of-type section {
   border-left: dotted white 1px;
   border-right: dotted white 1px;
+}
+body > section:last-of-type section:last-of-type {
+  background-color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
