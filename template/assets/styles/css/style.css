@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,17 +11,24 @@ body {
   overflow-x: hidden;
 }
 body > header {
-  display: inline-block;
   position: fixed;
   background-color: white;
   height: 10vh;
   width: 100vw;
   z-index: 1;
   top: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+body > header figure {
+  grid-column: 1/2;
+  margin: auto;
 }
 body > header nav {
   width: 80%;
   margin: auto;
+  padding: 0;
+  grid-column: 2/3;
 }
 body > header nav ul {
   width: 100%;
@@ -29,11 +40,45 @@ body > header nav ul li {
   color: black;
   font-size: 1em;
   text-align: center;
-  padding-left: 2.5em;
+  width: 14.2857142857%;
 }
-body > header button span {
-  display: flex;
-  flex-direction: right;
+body > header button {
+  margin: auto;
+}
+body > main {
+  background-color: #fff6ef;
+}
+body > main > section:first-of-type {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+}
+body > main > section:first-of-type h1 {
+  color: black;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Work Sans", sans-serif;
+}
+body > main > section:nth-of-type(2) {
+  width: 100vw;
+}
+body > main > section:nth-of-type(2) header h2 {
+  color: black;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Work Sans", sans-serif;
+}
+body > main > section:nth-of-type(3) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+body > main > section:last-of-type footer button {
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
