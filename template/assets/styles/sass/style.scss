@@ -1,0 +1,55 @@
+@import "vars";
+
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "Work Sans",sans-serif;
+    overflow-x: hidden;
+    
+    & > header
+    {
+        display: inline-block;
+        position: fixed;
+        background-color: white;
+        height: 10vh;
+        width: 100vw;
+        z-index: 1;
+        top: 0;
+        
+        nav
+        {
+            width: 80%;
+            margin: auto;
+            
+            ul
+            {
+                width: 100%;
+                padding: 0;
+                text-align: center;
+                
+                li
+                {
+                    display: inline-block;
+                    color: black;
+                    font-size: 1em;
+                    text-align: center;
+                    padding-left: 2.5em;
+                    
+                }
+            }
+        }
+        
+        button
+        {
+            span
+            {
+                display: flex;
+                flex-direction: right; 
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
+}
+body > header {
+  display: inline-block;
+  position: fixed;
+  background-color: white;
+  height: 10vh;
+  width: 100vw;
+  z-index: 1;
+  top: 0;
+}
+body > header nav {
+  width: 80%;
+  margin: auto;
+}
+body > header nav ul {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+body > header nav ul li {
+  display: inline-block;
+  color: black;
+  font-size: 1em;
+  text-align: center;
+  padding-left: 2.5em;
+}
+body > header button span {
+  display: flex;
+  flex-direction: right;
+}
+
+/*# sourceMappingURL=style.css.map */
